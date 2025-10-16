@@ -1,0 +1,145 @@
+2025-10-14 08:58:39,728 [INFO] ================================================================================
+2025-10-14 08:58:39,728 [INFO] 🚀 YOLOv11 TRANSFER LEARNING
+2025-10-14 08:58:39,728 [INFO] ================================================================================
+2025-10-14 08:58:39,728 [INFO] 📅 Timestamp: 2025-10-14 08:58:39
+2025-10-14 08:58:39,728 [INFO] 📁 Project: navigation-assistance/v1
+2025-10-14 08:58:39,728 [INFO] 
+2025-10-14 08:58:39,728 [INFO] TRANSFER LEARNING INFO:
+2025-10-14 08:58:39,728 [INFO] --------------------------------------------------------------------------------
+2025-10-14 08:58:39,730 [INFO] Pretrained Model: models\yolo11n.pt
+2025-10-14 08:58:39,730 [INFO]   → Trained on COCO (80 classes)
+2025-10-14 08:58:39,730 [INFO]   → Will adapt to your dataset (check dataset.yaml for nc)
+2025-10-14 08:58:39,730 [INFO] Custom Dataset: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\dataset.yaml
+2025-10-14 08:58:39,730 [INFO] Transfer Strategy:
+2025-10-14 08:58:39,730 [INFO]   → Freeze first 10 layers (feature extraction)
+2025-10-14 08:58:39,730 [INFO]   → Train detection head (for your custom classes)
+2025-10-14 08:58:39,730 [INFO] 
+2025-10-14 08:58:39,730 [INFO] CONFIGURATION:
+2025-10-14 08:58:39,730 [INFO] --------------------------------------------------------------------------------
+2025-10-14 08:58:39,730 [INFO] Model: models\yolo11n.pt
+2025-10-14 08:58:39,730 [INFO] Dataset: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\dataset.yaml
+2025-10-14 08:58:39,730 [INFO] Epochs: 80
+2025-10-14 08:58:39,730 [INFO] Image Size: 640
+2025-10-14 08:58:39,730 [INFO] Batch Size: 8
+2025-10-14 08:58:39,730 [INFO] Workers: 2
+2025-10-14 08:58:39,730 [INFO] Patience: 10
+2025-10-14 08:58:39,730 [INFO] Seed: 42
+2025-10-14 08:58:39,730 [INFO] Freeze Layers: 10
+2025-10-14 08:58:39,730 [INFO] Cosine LR: True
+2025-10-14 08:58:39,730 [INFO] Mixed Precision: True
+2025-10-14 08:58:39,730 [INFO] 
+2025-10-14 08:58:39,730 [INFO] SYSTEM INFO:
+2025-10-14 08:58:39,732 [INFO] --------------------------------------------------------------------------------
+2025-10-14 08:58:39,732 [INFO] GPU: NVIDIA GeForce GTX 1650 (4.3 GB)
+2025-10-14 08:58:39,732 [INFO] 
+2025-10-14 08:58:39,733 [INFO] ================================================================================
+2025-10-14 08:58:39,733 [INFO] 
+2025-10-14 08:58:39,733 [INFO] 📦 Loading model...
+2025-10-14 08:58:39,893 [INFO] 🏋️ Starting training...
+
+2025-10-14 08:58:39,893 [INFO] --------------------------------------------------------------------------------
+2025-10-14 09:02:48,155 [INFO] Epoch 1/80 | Loss: 16.6238 | ⏱️ 248.3s/epoch | ETA: 326.9m
+2025-10-14 09:06:15,892 [INFO] Epoch 2/80 | Loss: 12.5493 | ⏱️ 228.0s/epoch | ETA: 296.4m
+2025-10-14 09:09:37,842 [INFO] Epoch 3/80 | Loss: 14.7755 | ⏱️ 219.3s/epoch | ETA: 281.5m
+2025-10-14 09:12:57,048 [INFO] Epoch 4/80 | Loss: 16.9428 | ⏱️ 214.3s/epoch | ETA: 271.4m
+2025-10-14 09:16:15,378 [INFO] Epoch 5/80 | Loss: 9.6187 | ⏱️ 211.1s/epoch | ETA: 263.9m
+2025-10-14 09:19:36,164 [INFO] Epoch 6/80 | Loss: 11.3685 | ⏱️ 209.4s/epoch | ETA: 258.2m
+2025-10-14 09:22:57,688 [INFO] Epoch 7/80 | Loss: 12.6625 | ⏱️ 208.3s/epoch | ETA: 253.4m
+2025-10-14 09:26:17,564 [INFO] Epoch 8/80 | Loss: 8.7745 | ⏱️ 207.2s/epoch | ETA: 248.7m
+2025-10-14 09:29:33,942 [INFO] Epoch 9/80 | Loss: 10.3567 | ⏱️ 206.0s/epoch | ETA: 243.8m
+2025-10-14 09:32:52,192 [INFO] Epoch 10/80 | Loss: 10.7601 | ⏱️ 205.2s/epoch | ETA: 239.4m
+2025-10-14 09:36:13,193 [INFO] Epoch 11/80 | Loss: 11.0634 | ⏱️ 204.8s/epoch | ETA: 235.6m
+2025-10-14 09:39:40,311 [INFO] Epoch 12/80 | Loss: 11.3267 | ⏱️ 205.0s/epoch | ETA: 232.4m
+2025-10-14 09:43:02,557 [INFO] Epoch 13/80 | Loss: 11.0750 | ⏱️ 204.8s/epoch | ETA: 228.7m
+2025-10-14 09:46:20,715 [INFO] Epoch 14/80 | Loss: 11.2207 | ⏱️ 204.3s/epoch | ETA: 224.8m
+2025-10-14 09:49:37,724 [INFO] Epoch 15/80 | Loss: 8.2536 | ⏱️ 203.9s/epoch | ETA: 220.8m
+2025-10-14 09:52:53,552 [INFO] Epoch 16/80 | Loss: 11.6769 | ⏱️ 203.4s/epoch | ETA: 216.9m
+2025-10-14 09:56:08,513 [INFO] Epoch 17/80 | Loss: 6.7965 | ⏱️ 202.9s/epoch | ETA: 213.0m
+2025-10-14 09:59:23,563 [INFO] Epoch 18/80 | Loss: 8.2934 | ⏱️ 202.4s/epoch | ETA: 209.2m
+2025-10-14 10:02:41,954 [INFO] Epoch 19/80 | Loss: 7.1663 | ⏱️ 202.2s/epoch | ETA: 205.6m
+2025-10-14 10:06:00,129 [INFO] Epoch 20/80 | Loss: 7.9641 | ⏱️ 202.0s/epoch | ETA: 202.0m
+2025-10-14 10:09:17,693 [INFO] Epoch 21/80 | Loss: 7.5205 | ⏱️ 201.8s/epoch | ETA: 198.4m
+2025-10-14 10:12:44,656 [INFO] Epoch 22/80 | Loss: 8.5753 | ⏱️ 202.0s/epoch | ETA: 195.3m
+2025-10-14 10:16:09,129 [INFO] Epoch 23/80 | Loss: 8.5537 | ⏱️ 202.1s/epoch | ETA: 192.0m
+2025-10-14 10:19:33,824 [INFO] Epoch 24/80 | Loss: 8.4792 | ⏱️ 202.2s/epoch | ETA: 188.8m
+2025-10-14 10:22:59,779 [INFO] Epoch 25/80 | Loss: 10.8409 | ⏱️ 202.4s/epoch | ETA: 185.5m
+2025-10-14 10:26:23,443 [INFO] Epoch 26/80 | Loss: 9.3824 | ⏱️ 202.4s/epoch | ETA: 182.2m
+2025-10-14 10:29:45,813 [INFO] Epoch 27/80 | Loss: 6.5329 | ⏱️ 202.4s/epoch | ETA: 178.8m
+2025-10-14 10:33:07,470 [INFO] Epoch 28/80 | Loss: 10.3513 | ⏱️ 202.4s/epoch | ETA: 175.4m
+2025-10-14 10:36:31,078 [INFO] Epoch 29/80 | Loss: 12.2656 | ⏱️ 202.5s/epoch | ETA: 172.1m
+2025-10-14 10:39:53,598 [INFO] Epoch 30/80 | Loss: 10.4238 | ⏱️ 202.5s/epoch | ETA: 168.7m
+2025-10-14 10:43:16,475 [INFO] Epoch 31/80 | Loss: 13.5172 | ⏱️ 202.5s/epoch | ETA: 165.4m
+2025-10-14 10:46:39,668 [INFO] Epoch 32/80 | Loss: 8.7379 | ⏱️ 202.5s/epoch | ETA: 162.0m
+2025-10-14 10:50:18,598 [INFO] Epoch 33/80 | Loss: 7.4277 | ⏱️ 203.0s/epoch | ETA: 159.0m
+2025-10-14 10:53:57,703 [INFO] Epoch 34/80 | Loss: 9.7086 | ⏱️ 203.5s/epoch | ETA: 156.0m
+2025-10-14 10:57:20,601 [INFO] Epoch 35/80 | Loss: 12.3745 | ⏱️ 203.4s/epoch | ETA: 152.6m
+2025-10-14 11:00:48,681 [INFO] Epoch 36/80 | Loss: 10.8965 | ⏱️ 203.6s/epoch | ETA: 149.3m
+2025-10-14 11:04:27,182 [INFO] Epoch 37/80 | Loss: 8.3324 | ⏱️ 204.0s/epoch | ETA: 146.2m
+2025-10-14 11:07:47,712 [INFO] Epoch 38/80 | Loss: 12.8784 | ⏱️ 203.9s/epoch | ETA: 142.7m
+2025-10-14 11:11:32,257 [INFO] Epoch 39/80 | Loss: 8.6753 | ⏱️ 204.4s/epoch | ETA: 139.7m
+2025-10-14 11:14:55,244 [INFO] Epoch 40/80 | Loss: 7.9250 | ⏱️ 204.4s/epoch | ETA: 136.3m
+2025-10-14 11:18:14,050 [INFO] Epoch 41/80 | Loss: 10.3985 | ⏱️ 204.2s/epoch | ETA: 132.8m
+2025-10-14 11:21:35,180 [INFO] Epoch 42/80 | Loss: 9.6247 | ⏱️ 204.2s/epoch | ETA: 129.3m
+2025-10-14 11:25:10,220 [INFO] Epoch 43/80 | Loss: 9.4410 | ⏱️ 204.4s/epoch | ETA: 126.1m
+2025-10-14 11:28:33,299 [INFO] Epoch 44/80 | Loss: 5.7175 | ⏱️ 204.4s/epoch | ETA: 122.6m
+2025-10-14 11:31:53,383 [INFO] Epoch 45/80 | Loss: 6.0151 | ⏱️ 204.3s/epoch | ETA: 119.2m
+2025-10-14 11:35:13,436 [INFO] Epoch 46/80 | Loss: 7.6654 | ⏱️ 204.2s/epoch | ETA: 115.7m
+2025-10-14 11:38:35,203 [INFO] Epoch 47/80 | Loss: 7.3196 | ⏱️ 204.2s/epoch | ETA: 112.3m
+2025-10-14 11:41:54,215 [INFO] Epoch 48/80 | Loss: 8.5774 | ⏱️ 204.0s/epoch | ETA: 108.8m
+2025-10-14 11:45:14,424 [INFO] Epoch 49/80 | Loss: 5.7323 | ⏱️ 204.0s/epoch | ETA: 105.4m
+2025-10-14 11:48:36,335 [INFO] Epoch 50/80 | Loss: 8.2657 | ⏱️ 203.9s/epoch | ETA: 102.0m
+2025-10-14 11:51:55,167 [INFO] Epoch 51/80 | Loss: 7.1061 | ⏱️ 203.8s/epoch | ETA: 98.5m
+2025-10-14 11:55:15,666 [INFO] Epoch 52/80 | Loss: 8.7625 | ⏱️ 203.8s/epoch | ETA: 95.1m
+2025-10-14 11:58:31,988 [INFO] Epoch 53/80 | Loss: 5.7491 | ⏱️ 203.6s/epoch | ETA: 91.6m
+2025-10-14 12:01:47,169 [INFO] Epoch 54/80 | Loss: 4.8277 | ⏱️ 203.5s/epoch | ETA: 88.2m
+2025-10-14 12:05:04,816 [INFO] Epoch 55/80 | Loss: 7.0377 | ⏱️ 203.4s/epoch | ETA: 84.7m
+2025-10-14 12:08:28,905 [INFO] Epoch 56/80 | Loss: 8.7578 | ⏱️ 203.4s/epoch | ETA: 81.4m
+2025-10-14 12:11:51,346 [INFO] Epoch 57/80 | Loss: 7.6094 | ⏱️ 203.4s/epoch | ETA: 78.0m
+2025-10-14 12:15:12,604 [INFO] Epoch 58/80 | Loss: 8.5693 | ⏱️ 203.3s/epoch | ETA: 74.6m
+2025-10-14 12:18:34,487 [INFO] Epoch 59/80 | Loss: 6.8805 | ⏱️ 203.3s/epoch | ETA: 71.2m
+2025-10-14 12:21:55,604 [INFO] Epoch 60/80 | Loss: 8.6343 | ⏱️ 203.3s/epoch | ETA: 67.8m
+2025-10-14 12:25:15,624 [INFO] Epoch 61/80 | Loss: 10.1639 | ⏱️ 203.2s/epoch | ETA: 64.3m
+2025-10-14 12:28:33,711 [INFO] Epoch 62/80 | Loss: 9.1517 | ⏱️ 203.1s/epoch | ETA: 60.9m
+2025-10-14 12:31:51,819 [INFO] Epoch 63/80 | Loss: 5.8311 | ⏱️ 203.0s/epoch | ETA: 57.5m
+2025-10-14 12:35:10,653 [INFO] Epoch 64/80 | Loss: 8.7440 | ⏱️ 203.0s/epoch | ETA: 54.1m
+2025-10-14 12:38:34,364 [INFO] Epoch 65/80 | Loss: 5.8135 | ⏱️ 203.0s/epoch | ETA: 50.7m
+2025-10-14 12:41:54,087 [INFO] Epoch 66/80 | Loss: 8.5007 | ⏱️ 202.9s/epoch | ETA: 47.4m
+2025-10-14 12:45:13,394 [INFO] Epoch 67/80 | Loss: 8.1057 | ⏱️ 202.9s/epoch | ETA: 44.0m
+2025-10-14 12:48:33,400 [INFO] Epoch 68/80 | Loss: 6.0298 | ⏱️ 202.8s/epoch | ETA: 40.6m
+2025-10-14 12:51:53,371 [INFO] Epoch 69/80 | Loss: 6.7429 | ⏱️ 202.8s/epoch | ETA: 37.2m
+2025-10-14 12:55:14,235 [INFO] Epoch 70/80 | Loss: 4.8548 | ⏱️ 202.8s/epoch | ETA: 33.8m
+2025-10-14 12:58:39,971 [INFO] Epoch 71/80 | Loss: 5.7815 | ⏱️ 202.8s/epoch | ETA: 30.4m
+2025-10-14 13:01:55,798 [INFO] Epoch 72/80 | Loss: 5.0256 | ⏱️ 202.7s/epoch | ETA: 27.0m
+2025-10-14 13:05:11,483 [INFO] Epoch 73/80 | Loss: 8.1469 | ⏱️ 202.6s/epoch | ETA: 23.6m
+2025-10-14 13:08:27,142 [INFO] Epoch 74/80 | Loss: 7.9400 | ⏱️ 202.5s/epoch | ETA: 20.3m
+2025-10-14 13:11:43,706 [INFO] Epoch 75/80 | Loss: 3.9796 | ⏱️ 202.5s/epoch | ETA: 16.9m
+2025-10-14 13:15:00,816 [INFO] Epoch 76/80 | Loss: 6.5678 | ⏱️ 202.4s/epoch | ETA: 13.5m
+2025-10-14 13:18:20,387 [INFO] Epoch 77/80 | Loss: 5.2365 | ⏱️ 202.3s/epoch | ETA: 10.1m
+2025-10-14 13:21:41,945 [INFO] Epoch 78/80 | Loss: 6.0527 | ⏱️ 202.3s/epoch | ETA: 6.7m
+2025-10-14 13:25:03,441 [INFO] Epoch 79/80 | Loss: 6.4707 | ⏱️ 202.3s/epoch | ETA: 3.4m
+2025-10-14 13:28:23,486 [INFO] Epoch 80/80 | Loss: 8.9571 | ⏱️ 202.3s/epoch
+2025-10-14 13:29:05,856 [INFO] --------------------------------------------------------------------------------
+2025-10-14 13:29:05,856 [INFO] 
+📊 Running final validation...
+2025-10-14 13:29:31,437 [INFO] 
+2025-10-14 13:29:31,437 [INFO] ================================================================================
+2025-10-14 13:29:31,437 [INFO] ✅ TRAINING COMPLETED!
+2025-10-14 13:29:31,437 [INFO] ================================================================================
+2025-10-14 13:29:31,441 [INFO] ⏱️ Duration: 4h 30m 26s
+2025-10-14 13:29:31,441 [INFO] 🏆 Best Epoch: 0/80
+2025-10-14 13:29:31,441 [INFO] 
+2025-10-14 13:29:31,441 [INFO] FINAL METRICS:
+2025-10-14 13:29:31,441 [INFO] --------------------------------------------------------------------------------
+2025-10-14 13:29:31,441 [INFO] mAP50:     0.9274
+2025-10-14 13:29:31,441 [INFO] mAP50-95:  0.7359
+2025-10-14 13:29:31,441 [INFO] Precision: 0.8846
+2025-10-14 13:29:31,441 [INFO] Recall:    0.8881
+2025-10-14 13:29:31,441 [INFO] 
+2025-10-14 13:29:31,441 [INFO] SAVED FILES:
+2025-10-14 13:29:31,441 [INFO] --------------------------------------------------------------------------------
+2025-10-14 13:29:31,441 [INFO] 📁 Model directory: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\navigation-assistance\v12
+2025-10-14 13:29:31,441 [INFO] 🏆 Best weights: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\navigation-assistance\v12\weights\best.pt
+2025-10-14 13:29:31,441 [INFO] 📄 Last weights: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\navigation-assistance\v12\weights\last.pt
+2025-10-14 13:29:31,441 [INFO] 📝 Training log: navigation-assistance\v1\training_20251014_085838.log
+2025-10-14 13:29:31,446 [INFO] 📋 Summary: navigation-assistance\v1\training_summary_20251014_132931.txt
+2025-10-14 13:29:31,446 [INFO] ================================================================================

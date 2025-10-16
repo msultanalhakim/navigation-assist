@@ -1,0 +1,27 @@
+================================================================================
+YOLOv11 TRAINING SUMMARY
+================================================================================
+
+CONFIGURATION:
+--------------------------------------------------------------------------------
+Model: models\yolo11n.pt
+Dataset: C:\Users\msult\OneDrive\Documents\Projects\navigation-assist\dataset.yaml
+Epochs: 80
+Image Size: 640
+Batch Size: 8
+Device: 0
+Workers: 2
+Patience: 10
+Seed: 42
+Freeze Layers: 10
+
+RESULTS:
+--------------------------------------------------------------------------------
+Training Duration: 4h 30m 26s
+Best Epoch: 0
+mAP50: 0.9274
+mAP50-95: 0.7359
+Precision: 0.8846
+Recall: 0.8881
+
+================================================================================

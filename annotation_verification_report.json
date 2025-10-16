@@ -1,0 +1,356 @@
+{
+  "suspicious_files": [],
+  "distribution": {
+    "train": {
+      "door": 1466,
+      "stair": 1151,
+      "chair": 1686,
+      "table": 1095,
+      "person": 2695
+    },
+    "val": {
+      "door": 391,
+      "chair": 505,
+      "table": 315,
+      "stair": 337,
+      "person": 731
+    },
+    "test": {
+      "chair": 351,
+      "table": 166,
+      "stair": 140,
+      "door": 183,
+      "person": 385
+    }
+  },
+  "filename_patterns": {
+    "door": [
+      {
+        "filename": "1851889c-door0000754",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "1851889c-door0000754_dup1",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "1851889c-door0000754_dup2",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "1e2e55f1-door0000113",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "1f795447-door0000702",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "1f795447-door0000702_dup1",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "227c3f38-door0000657_dup1",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "23c9b389-door0000514",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "45a2d61e-door0000078_dup1",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      },
+      {
+        "filename": "45a2d61e-door0000078_dup2",
+        "expected": "door",
+        "actual": [
+          "door"
+        ],
+        "match": true
+      }
+    ],
+    "chair": [
+      {
+        "filename": "chair-1",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-100",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-101",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-101_dup1",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-101_dup2",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-102",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-104_dup1",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-104_dup2",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-106",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "chair-106_dup1",
+        "expected": "chair",
+        "actual": [
+          "chair"
+        ],
+        "match": true
+      }
+    ],
+    "stair": [
+      {
+        "filename": "stair-case1",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361flip_output",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361flip_output_dup1",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361flip_output_dup2",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361flip_output_dup3",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361_output_dup1",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361_output_dup11",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361_output_dup12",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361_output_dup2",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      },
+      {
+        "filename": "wood-stair-1315138361_output_dup4",
+        "expected": "stair",
+        "actual": [
+          "stair"
+        ],
+        "match": true
+      }
+    ],
+    "table": [
+      {
+        "filename": "table-1",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-100",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-100_dup1",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-100_dup2",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-101",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-101_dup2",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-102",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-102_dup1",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-102_dup2",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      },
+      {
+        "filename": "table-103",
+        "expected": "table",
+        "actual": [
+          "table"
+        ],
+        "match": true
+      }
+    ]
+  }
+}
