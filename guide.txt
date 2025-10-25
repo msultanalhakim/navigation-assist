@@ -1,0 +1,8 @@
+# Hyperparameter search (random, 10 experiments)
+python run_hyperparameter_search.py --type random --n 10
+
+# Hyperparameter search (grid)
+python run_hyperparameter_search.py --type grid
+
+# Export model to TFLite
+python run_export.py --model runs/train/exp_latest/weights/best.pt

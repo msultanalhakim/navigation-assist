@@ -1,6 +1,0 @@
-train: dataset/processed/train_final/images
-val: dataset/processed/val/images
-test: dataset/processed/test/images
-
-nc: 5
-names: ['person', 'chair', 'table', 'door', 'stair']

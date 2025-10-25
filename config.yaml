@@ -1,0 +1,175 @@
+# Navigation Assist ML Pipeline - Optimized Configuration
+# =======================================================
+
+# Dataset Paths
+# -------------------------------------
+train: data/processed/train/images
+val: data/processed/val/images
+test: data/processed/test/images
+
+nc: 5
+names: ['person', 'chair', 'table', 'door', 'stair']
+
+# This file serves as the dataset YAML for YOLO
+path: .
+dataset_yaml: config.yaml
+
+# Model Configuration
+# -------------------
+model: yolo11n.pt
+
+# Project Settings
+# ----------------
+project: runs/train
+experiment: null  # Auto-generate with timestamp
+
+# Training Parameters
+# -------------------
+training:
+  epochs: 100
+  batch: 16
+  imgsz: 640
+  patience: 10
+  freeze: 10
+  
+  # Optimizer
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  optimizer: SGD
+  cos_lr: true
+  
+  # System
+  workers: 4
+  amp: true
+  
+  # Checkpointing
+  save_period: -1  # -1 = save only last and best
+  cache: ram  # Cache images in RAM for faster training
+
+# Dataset Processing (Single-pass pipeline)
+preprocessing:
+  # Input/Output
+  raw_path: data/raw
+  output_path: data/processed
+  
+  # Class mapping
+  class_map:
+    person: 0
+    chair: 1
+    table: 2
+    door: 3
+    stair: 4
+
+  # Folders to process
+  folders_to_process:
+    - person
+    - chair
+    - table
+    - door
+    - stair
+    - primary
+  
+  # Processing parameters
+  target_size: [640, 640]
+  quality: 95
+  
+  # Split ratios
+  split:
+    ratios: [0.7, 0.2, 0.1]
+    seed: 42
+  
+  # Parallel processing
+  max_workers: null  # null = use all CPU cores
+  batch_size: 100
+
+# Caching Strategy
+# ---------------------------------------
+cache:
+  enabled: true
+  directory: cache/.dataset_cache
+  invalidate_on_config_change: true
+  
+  cache_preprocessing: true
+  cache_statistics: true
+  
+  cache_images: false
+  cache_augmentations: false
+
+# Hyperparameter Search
+# ----------------------
+hyperparameter_search:
+  epochs: 40
+  patience: 10
+  save_period: -1  # Save space during search
+  
+  search_space:
+    lr0: [0.005, 0.02]
+    momentum: [0.90, 0.945]
+    weight_decay: [0.0003, 0.0012]
+    batch: [16, 24, 32]
+    optimizer: ["SGD", "AdamW"]
+    cos_lr: [true, false]
+
+# Model Export
+# ------------
+export:
+  formats: ["tflite"]
+  
+  tflite:
+    quantization: ["float16", "int8"]
+    int8_calibration_images: 100
+    optimize_for_size: true
+  
+  output_path: models/
+
+# Disk Space Management
+# ---------------------
+cleanup:
+  # Auto-cleanup old runs to save space
+  auto_cleanup: true
+  keep_last_n_runs: 5
+  
+  # Clean intermediate files
+  remove_cache_after_training: false
+  remove_checkpoints_except_best: true
+
+# Logging
+# -------
+logging:
+  level: INFO
+  format: "[%(levelname)s] %(asctime)s - %(message)s"
+  save_logs: true
+  log_dir: logs/
+  
+  # Reduce verbosity
+  ultralytics_verbose: false
+
+# Performance Optimization
+# ------------------------
+performance:
+  # Multi-processing
+  use_multiprocessing: true
+  prefetch_factor: 2
+  pin_memory: true
+  
+  # Memory management
+  clear_cache_every_n_epochs: 10
+  gradient_accumulation_steps: 1
+  
+  # Mixed precision
+  use_amp: true
+  
+# Production Settings
+# -------------------
+production:
+  # Model serving
+  inference_device: cpu  # or 'cuda' for GPU inference
+  batch_inference: true
+  max_batch_size: 32
+  
+  # Post-processing
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_detections: 100  # Limit for efficiency
