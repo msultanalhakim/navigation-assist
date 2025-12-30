@@ -31,8 +31,6 @@ Berikut adalah tampilan antarmuka aplikasi yang dikembangkan:
 </div>
 <br>
 
-
-
 ## ✨ Fitur Utama
 
 Berdasarkan implementasi saat ini, aplikasi memiliki fitur unggulan:
