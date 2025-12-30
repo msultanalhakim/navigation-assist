@@ -1,136 +1,5 @@
-# Navigation Assist ML Pipeline - .gitignore
-# ==========================================
-
 # ============================================
-# DATASETS & DATA
-# ============================================
-data/
-dataset/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.bmp
-*.tiff
-
-# Exclude sample data (if you want to keep examples)
-!docs/images/*.png
-!docs/images/*.jpg
-
-# ============================================
-# MODELS & WEIGHTS
-# ============================================
-# PyTorch models
-*.pt
-*.pth
-*.weights
-*.ckpt
-
-# TFLite models
-*.tflite
-
-# ONNX models
-*.onnx
-
-# Model directories
-models/
-runs/
-weights/
-
-# Training outputs
-navigation-assistance/
-yolo*/
-
-# ============================================
-# CACHE & TEMPORARY FILES
-# ============================================
-cache/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-
-# Distribution / packaging
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# ============================================
-# LOGS & OUTPUTS
-# ============================================
-logs/
-*.log
-outputs/
-results/
-*.csv
-*.json
-
-# Exclude config files (keep them)
-!config.yaml
-!config.json
-!package.json
-
-# ============================================
-# JUPYTER NOTEBOOKS
-# ============================================
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-
-# Keep notebooks but ignore outputs
-# *.ipynb  # Uncomment if you don't want notebooks in Git
-
-# ============================================
-# PYTHON VIRTUAL ENVIRONMENTS
-# ============================================
-venv/
-env/
-ENV/
-.venv/
-.ENV/
-virtualenv/
-
-# ============================================
-# IDE & EDITORS
-# ============================================
-# VSCode
-.vscode/
-.history/
-
-# PyCharm
-.idea/
-*.iml
-*.iws
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim
-*.swp
-*.swo
-*~
-
-# Emacs
-*~
-\#*\#
-.\#*
-
-# ============================================
-# OPERATING SYSTEM
+# GLOBAL / OS / IDE (Berlaku untuk semua folder)
 # ============================================
 # macOS
 .DS_Store
@@ -144,60 +13,84 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-# Linux
-*~
-.directory
-.Trash-*
+# VSCode & Editor Config
+.vscode/
+.history/
+*.code-workspace
 
-# ============================================
-# BACKUPS & ARCHIVES
-# ============================================
-backup_*/
-*.backup
-*.bak
-*.tmp
-*.zip
-*.tar.gz
-*.rar
-*.7z
+# JetBrains (PyCharm / Android Studio)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
 
-# ============================================
-# TESTING & COVERAGE
-# ============================================
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+# Machine Learning (Python/YOLO)
+# Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# ============================================
-# ENVIRONMENT VARIABLES
-# ============================================
+# Virtual Environments
+venv/
+env/
 .env
-.env.local
-.env.*.local
+.venv/
 
-# ============================================
-# PROJECT SPECIFIC
-# ============================================
-# Temporary processing folders
-_merged*/
-_combined*/
-*_augmented/
-train_augmented/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
 
-# Search results
-random_search/
-grid_search/
+# Datasets & Data
+data/
+dataset/
+datasets/
 
-# Annotations verification
-annotation_verification_report.json
-selective_test_results.json
+# Large Model Files (Supaya tidak error saat push karena >100MB)
+*.pt
+*.pth
+*.weights
+*.ckpt
+*.onnx
+*.tflite
+*.h5
 
-# TODO files
-todo.json
-TODO.txt
+# Model directories (Output training)
+runs/
+models/
+weights/
+logs/
+training_results/
+
+# Android App (Kotlin/Gradle)
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file
+local.properties
+
+# Proguard
+proguard-logs/
+
+# Log Files
+*.log
+
+# Android Studio Navigation Editor temp files
+.navigation/
+
+# Captures
+captures/
+
+# Keystore files (Kunci keamanan)
+*.jks
+*.keystore
+*.pem
+*.p12
+*.key
+
+# Google Services
+# google-services.json
+
+# Mobile specific build outputs
+*.apk
+*.aab
